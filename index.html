@@ -77,9 +77,9 @@ body {
 function myRedirect() {
   var response = document.getElementById('TherapistID').value;
   if (response == 'Fabio')
-    location = 'http://google.com';
+    location.replace('http://google.com')
   else
-    location = 'http://naver.com';
+    location.replace('http://naver.com')
   return false;
 }
 </script>
