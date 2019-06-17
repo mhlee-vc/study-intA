@@ -30,7 +30,7 @@ body {
 .header p {
   font-size: 35px;
 }
-  
+
 /* Footer */
 .footer {
   padding: 10px;
@@ -39,18 +39,18 @@ body {
 }
 </style>
 </head>
-  
-  
+
+
 <body>
 <div class="header">
   <h1>Study on Intelligent Decision Support for Rehabilitation Assessment</h1>
   <p>Interface A: </p>
 </div>
-  
+
 <div class="footer">
   <h2>Enter your Therapist ID</h2>
   <form id="frm-log" onSubmit="return myRedirect();">
-  Therapist ID: <input type="text" name="TherapistID" value=""><input type="submit" value="Submit">
+  Therapist ID: <input id="tid" type="text" name="TherapistID" value=""><input type="submit" value="Submit">
   </form>
   <!--
   <h2>Enter your Therapist ID and password</h2>
@@ -63,7 +63,7 @@ body {
   -->
   <!--
   <div align="center">
-  <form action="/action_page.php">    
+  <form action="/action_page.php">
   <table>
     <tr><td>Therapist ID :</td> <td> <input type="text" name="TherapistID"></td><br></tr>
     <tr><td>Password :</td> <td> <input type="text" name="Password"></td><br></tr>
@@ -72,22 +72,22 @@ body {
   </form>
   -->
 </div>
-  
+
 <script>
 function myRedirect() {
-  var response = document.getElementById('TherapistID').value;
+  var response = document.getElementById('tid').value;
   console.log(response);
   if (response == "Fabio") {
-    console.log("google page");
+    console.log("google page")
     window.location.replace('http://google.com')
   }
   else {
-    console.log('other page');
+    console.log('other page')
     window.location.replace('http://naver.com')
   }
   return false;
 }
 </script>
-  
+
 </body>
 </html>
