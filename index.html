@@ -36,7 +36,15 @@ body {
   padding: 10px;
   text-align: center;
   background: #ddd;
-} 
+}
+.container {
+  width: 500px;
+  clear: both;
+}
+.container input {
+  width: 100%;
+  clear: both;
+}
 </style>
 </head>
   
@@ -48,12 +56,14 @@ body {
 </div>
   
 <div class="footer">
-  <h2>Enter your Therapist ID</h2>
+  <h2>Enter your Therapist ID and password</h2>
+  <div class="container">
   <form action="/action_page.php">
   Therapist ID: <input type="text" name="TherapistID:" value=""><br>
   Password    : <input type="text" name="Password" value=""><br>
   <input type="submit" value="Submit">
   </form>
+  </div>
 </div>
   
 </body>
