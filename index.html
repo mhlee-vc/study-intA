@@ -78,12 +78,17 @@ function myRedirect() {
   var response = document.getElementById('tid').value;
   console.log(response);
   if (response == "Fabio") {
-    console.log("google page")
-    window.location.replace('http://google.com')
+    console.log("google page");
+    var strRedirectBase = "https://mhlee-vc.github.io/study-intA/select-page-";
+    var footer = ".html";
+    var arrRedirect = [strRedirectBase, response, footer];
+    var strRedirectAdd = arrRedirect.join('');
+    console.log(strRedirectAdd);
+    window.location.href(strRedirectAdd);
   }
   else {
-    console.log('other page')
-    window.location.replace('http://naver.com')
+    console.log('other page');
+    window.location.href('http://google.com');
   }
   return false;
 }
