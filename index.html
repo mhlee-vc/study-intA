@@ -77,12 +77,14 @@ body {
 function myRedirect() {
   var response = document.getElementById('TherapistID').value;
   console.log(response);
-  if (response == 'Fabio')
+  if (response == 'Fabio') {
     console.log('google page');
     window.location.replace('http://google.com')
-  else
+  }
+  else {
     console.log('other page');
     window.location.replace('http://naver.com')
+  }
   return false;
 }
 </script>
