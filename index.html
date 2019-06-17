@@ -76,10 +76,13 @@ body {
 <script>
 function myRedirect() {
   var response = document.getElementById('TherapistID').value;
+  console.log(response);
   if (response == 'Fabio')
-    location.replace('http://google.com')
+    console.log('google page');
+    window.location.replace('http://google.com')
   else
-    location.replace('http://naver.com')
+    console.log('other page');
+    window.location.replace('http://naver.com')
   return false;
 }
 </script>
