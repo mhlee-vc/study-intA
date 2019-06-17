@@ -84,11 +84,11 @@ function myRedirect() {
     var arrRedirect = [strRedirectBase, response.toLowerCase(), footer];
     var strRedirectAdd = arrRedirect.join('');
     console.log(strRedirectAdd);
-    window.location.href(strRedirectAdd);
+    window.location.assign(strRedirectAdd);
   }
   else {
     console.log('other page');
-    window.location.href('http://google.com');
+    window.location.assign('http://google.com');
   }
   return false;
 }
