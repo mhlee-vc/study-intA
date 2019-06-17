@@ -49,8 +49,8 @@ body {
   
 <div class="footer">
   <h2>Enter your Therapist ID</h2>
-  <form id="frm-log" action="/action_page.php">
-  Therapist ID: <input type="text" name="TherapistID:" value=""><input type="submit" onclick="myFunction()" value="Submit">
+  <form id="frm-log" onSubmit="return myRedirect();">
+  Therapist ID: <input type="text" name="TherapistID" value=""><input type="submit" value="Submit">
   </form>
   <!--
   <h2>Enter your Therapist ID and password</h2>
@@ -74,8 +74,13 @@ body {
 </div>
   
 <script>
-function myFunction() {
-  document.getElementById("frm-log").submit();
+function myRedirect() {
+  var response = document.getElementById('TherapistID').value;
+  if (response == 'Fabio')
+    location = 'http://google.com';
+  else
+    location = 'http://naver.com;
+  return false;
 }
 </script>
   
