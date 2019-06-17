@@ -81,7 +81,7 @@ function myRedirect() {
     console.log("google page");
     var strRedirectBase = "https://mhlee-vc.github.io/study-intA/select-page-";
     var footer = ".html";
-    var arrRedirect = [strRedirectBase, response, footer];
+    var arrRedirect = [strRedirectBase, response.toLowerCase(), footer];
     var strRedirectAdd = arrRedirect.join('');
     console.log(strRedirectAdd);
     window.location.href(strRedirectAdd);
